@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>ERPNext Vendor Evaluation | Geometric Power Group · FINAL DECISION AID</title>
+<title>ERPNext Vendor Evaluation | Geometric Power Group · FINAL DECISION (Post-Convergenix Demo)</title>
 <style>
   :root{
     --green:#0b7a4b;
@@ -93,9 +93,6 @@
   .hero .right{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-content:center}
   .quote{font-size:22px;line-height:1.35;font-weight:700;max-width:780px}
   .band{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:16px}
-  .summary-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:12px}
-  .summary-grid .card{padding:16px}
-  .summary-grid .card h3{margin:0 0 6px;font-size:18px}
   .green-box{background:linear-gradient(160deg,var(--green),#0f8e58);color:#fff;border-radius:24px;padding:22px;box-shadow:var(--shadow)}
   .green-box h3{margin:0 0 8px;font-size:20px}
   .green-box .small{color:rgba(255,255,255,.82)}
@@ -113,15 +110,11 @@
   .axis-y{left:40px;top:22px;bottom:34px;width:2px}
   .bubble{position:absolute;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px;font-weight:800;box-shadow:0 12px 24px rgba(0,0,0,.12)}
   .axis-label{position:absolute;font-size:12px;color:var(--muted);font-weight:700}
-  .xlab{bottom:8px;left:50%;transform:translateX(-50%)}
-  .ylab{left:-20px;top:50%;transform:translateY(-50%) rotate(-90deg)}
   .price-table td{padding:6px 4px;border-bottom:1px dashed var(--line);}
   .price-table tr:last-child td{border-bottom:none;font-weight:800;}
-  .currency-toggle{font-size:13px;background:#eef9f3;padding:2px 8px;border-radius:40px;}
   .fx-note{font-size:12px;color:var(--muted);font-style:italic;}
   .negotiation-bullet{display:flex;gap:10px;margin:12px 0;align-items:flex-start;}
   .negotiation-bullet:before{content:"💬";color:var(--green);font-weight:bold;margin-right:8px;}
-  /* explicit next/prev buttons container */
   .nav-buttons{
     position:fixed;
     bottom:24px;
@@ -162,11 +155,11 @@
     padding:8px 20px;
     border-radius:40px;
   }
+  .highlight{background:var(--green-3); padding:2px 8px; border-radius:20px; font-weight:600;}
 </style>
 </head>
 <body>
 <div class="navhint">Use ← → or Space to navigate</div>
-<!-- floating next/previous buttons -->
 <div class="nav-buttons">
   <button class="nav-button" id="prevBtn" title="Previous slide">←</button>
   <span class="page-indicator" id="pageIndicator">1/12</span>
@@ -175,7 +168,7 @@
 
 <div id="deck">
 
-  <!-- SLIDE 1: Executive summary (adds negotiation hint) -->
+  <!-- SLIDE 1: Executive summary - updated with Convergenix demo and partner discovery -->
   <section class="slide active">
     <div class="frame">
       <div class="accent-top"></div>
@@ -183,25 +176,25 @@
         <div class="left">
           <div class="eyebrow">Geometric Power Group</div>
           <h1>ERPNext Implementation Partner Evaluation</h1>
-          <div class="quote">A management brief on vendor fit, delivery risk, demo performance, and known commercial terms.</div>
+          <div class="quote">Final decision brief after Convergenix demo & NED site visit.</div>
           <div class="band">
             <span class="pill">White background</span>
             <span class="pill">Green accent theme</span>
-            <span class="pill">Final decision aid</span>
+            <span class="pill">Final decision deck</span>
             <span class="pill">March 2026</span>
           </div>
           <div style="margin-top:18px" class="callout">
-            <strong>Current read:</strong> Matiyas (technical lead, $96k), NED (local, ₦102M all-in), Cloudrock (local, no pricing), Convergenix (demo 19 Mar). <strong>Negotiation leverage exists with both priced vendors.</strong>
+            <strong>Key findings:</strong> Convergenix demo completed (solid but not surpassing Matiyas). NED office visit confirmed operational capability. <strong>Critical discovery:</strong> Matiyas lists NED's office as a branch in Nigeria — confirming a partner relationship. This changes the evaluation dynamic.
           </div>
         </div>
         <div class="right">
-          <div class="card soft"><div class="big-number">5</div><div class="label">Vendors engaged</div><div class="small">4 active</div></div>
-          <div class="card soft"><div class="big-number">3</div><div class="label">Demos completed</div><div class="small">NED, Matiyas, Cloudrock</div></div>
-          <div class="card soft"><div class="big-number">2</div><div class="label">Priced proposals</div><div class="small">Matiyas (USD) & NED (NGN)</div></div>
-          <div class="green-box"><h3>Decision stance</h3><div class="small">Two fully priced vendors. Use negotiation to improve terms before final selection.</div></div>
+          <div class="card soft"><div class="big-number">5</div><div class="label">Vendors engaged</div><div class="small">4 active, 1 no response</div></div>
+          <div class="card soft"><div class="big-number">4</div><div class="label">Demos completed</div><div class="small">NED, Matiyas, Cloudrock, Convergenix</div></div>
+          <div class="card soft"><div class="big-number">2</div><div class="label">Priced proposals</div><div class="small">Matiyas ($96k) & NED (₦102M)</div></div>
+          <div class="green-box"><h3>Decision stance</h3><div class="small">NED and Matiyas are partners. This allows hybrid delivery model. Final selection should leverage both.</div></div>
         </div>
       </div>
-      <div class="footer"><span>Source: Geometric Power RFP, received proposals, demos, vendor notes</span><span class="slide-num">1 / 12</span></div>
+      <div class="footer"><span>Source: RFP, proposals, demos, site visit, vendor partnership confirmation</span><span class="slide-num">1 / 12</span></div>
     </div>
   </section>
 
@@ -217,164 +210,213 @@
     </div>
   </section>
 
-  <!-- SLIDE 3: Process summary (unchanged) -->
+  <!-- SLIDE 3: Process summary - UPDATED with all demos completed and partnership discovery -->
   <section class="slide">
     <div class="frame">
-      <div class="header"><div><div class="eyebrow">Process summary</div><h2>Vendor outreach, proposals, and demos</h2></div><div class="meta">Fair process evidence</div></div>
+      <div class="header"><div><div class="eyebrow">Process summary</div><h2>Vendor outreach, proposals, and demos</h2><div class="subtitle">All demos now completed. Partnership between NED and Matiyas confirmed.</div></div><div class="meta">Fair process evidence</div></div>
       <div class="grid-2">
-        <div class="card"><div class="section-title">Vendors contacted</div><table><thead><tr><th>Vendor</th><th>Proposal</th><th>Demo</th><th>Status</th></tr></thead><tbody><tr><td>Convergenix</td><td>Received</td><td><span class="status pending">19 Mar</span></td><td>Active</td></tr><tr><td>NED</td><td>Received (NGN)</td><td><span class="status ok">Completed</span></td><td>Active</td></tr><tr><td>Matiyas</td><td>Received ($)</td><td><span class="status ok">Completed</span></td><td>Active</td></tr><tr><td>Cloudrock</td><td>Fact sheet</td><td><span class="status ok">Completed</span></td><td>Active</td></tr><tr><td>Manqala</td><td>None</td><td><span class="status bad">No response</span></td><td>Inactive</td></tr></tbody></table><div class="section-title" style="margin-top:16px">Evaluation timeline</div><div class="timeline"><div class="step"><div class="node"></div><h4>RFP issued</h4><p>23 Jan</p></div><div class="step"><div class="node"></div><h4>Proposals</h4><p>NED, Matiyas, Convergenix</p></div><div class="step"><div class="node"></div><h4>Demos</h4><p>NED, Matiyas, Cloudrock</p></div><div class="step"><div class="node pending"></div><h4>Final demo</h4><p>19 Mar</p></div></div></div>
-        <div class="card"><div class="section-title">Notable facts</div><ul class="clean"><li>NED supported prior audit using ERPNext.</li><li>Matiyas top technical demo + $96k pricing.</li><li>NED submitted full NGN pricing 4 Mar (₦102M all-in).</li><li>Cloudrock impressive demo, pricing missing.</li></ul></div>
+        <div class="card">
+          <div class="section-title">Vendors contacted</div>
+          <table>
+            <thead><tr><th>Vendor</th><th>Proposal</th><th>Demo</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Convergenix</strong></td><td>Received</td><td><span class="status ok">Completed (19 Mar)</span></td><td>Active</td></tr>
+              <tr><td><strong>NED Consultants</strong></td><td>Received (NGN)</td><td><span class="status ok">Completed</span></td><td>Active · Partner</td></tr>
+              <tr><td><strong>Matiyas Solutions</strong></td><td>Received ($)</td><td><span class="status ok">Completed</span></td><td>Active · Partner</td></tr>
+              <tr><td><strong>Cloudrock</strong></td><td>Fact sheet</td><td><span class="status ok">Completed</span></td><td>Active</td></tr>
+              <tr><td><strong>Manqala</strong></td><td>None</td><td><span class="status bad">No response</span></td><td>Inactive</td></tr>
+            </tbody>
+          </table>
+          <div class="section-title" style="margin-top:16px">Critical Discovery</div>
+          <div class="callout" style="margin-top:8px; padding:12px;">
+            <strong>🔗 NED & Matiyas are partners.</strong> During the site visit to NED's Aba office, we confirmed that Matiyas lists NED's office as a branch in Nigeria. This validates the earlier observation about backend dependency — they are intended to work together.
+          </div>
+        </div>
+        <div class="card">
+          <div class="section-title">Evaluation timeline & findings</div>
+          <div class="timeline">
+            <div class="step"><div class="node"></div><h4>RFP issued</h4><p>23 Jan</p></div>
+            <div class="step"><div class="node"></div><h4>Proposals</h4><p>NED, Matiyas, Convergenix</p></div>
+            <div class="step"><div class="node"></div><h4>Demos</h4><p>All 4 vendors completed</p></div>
+            <div class="step"><div class="node"></div><h4>Partnership confirmed</h4><p>NED + Matiyas</p></div>
+          </div>
+          <div class="section-title" style="margin-top:20px">Convergenix demo assessment</div>
+          <ul class="clean">
+            <li>✅ Solid methodology, well-structured presentation.</li>
+            <li>⚠️ Technical depth did not surpass Matiyas.</li>
+            <li>⚠️ Pricing still outstanding (requested).</li>
+            <li>📊 Overall score: 76 — solid but not leading.</li>
+          </ul>
+        </div>
       </div>
-      <div class="footer"><span>internal evaluation log</span><span class="slide-num">3 / 12</span></div>
+      <div class="footer"><span>All demos complete; partnership changes selection strategy</span><span class="slide-num">3 / 12</span></div>
     </div>
   </section>
 
-  <!-- SLIDE 4: Comparative snapshot (updated) -->
+  <!-- SLIDE 4: Comparative snapshot - updated with partnership insight -->
   <section class="slide">
     <div class="frame">
       <div class="header"><div><div class="eyebrow">Comparative snapshot</div><h2>Where each vendor stands</h2></div><div class="legend"><span><span class="dot" style="background:var(--green)"></span>Strength</span><span><span class="dot" style="background:var(--amber)"></span>Watchpoint</span></div></div>
       <div class="grid-4">
-        <div class="card"><h3>NED</h3><div class="pill">Audit history</div><div class="pill">Full pricing</div><ul class="clean"><li>✅ Strongest client familiarity</li><li>✅ ₦102M all-in (inc VAT)</li><li>⚠️ Partially dependent on Matiyas?</li></ul></div>
-        <div class="card"><h3>Cloudrock</h3><div class="pill">Impressive demo</div><div class="pill">Local presence</div><ul class="clean"><li>✅ Strong local support potential</li><li>⚠️ Commercial TBD</li></ul></div>
-        <div class="card"><h3>Convergenix</h3><div class="pill">Structured proposal</div><div class="pill">Demo pending</div><ul class="clean"><li>✅ Clean architecture on paper</li><li>⚠️ No live validation, pricing unknown</li></ul></div>
-        <div class="card"><h3>Matiyas</h3><div class="pill">Top-notch demo</div><div class="pill">USD priced</div><ul class="clean"><li>✅ Strongest technical depth</li><li>✅ $96k ≈ ₦147M</li><li>⚠️ Rigid change mgmt, forex risk</li></ul></div>
+        <div class="card" style="border:2px solid var(--green);"><h3>NED + Matiyas <span class="pill">Partner Network</span></h3><div class="pill">Local front</div><div class="pill">Technical backend</div><ul class="clean"><li>✅ Combined: local familiarity + strong technical depth</li><li>✅ ₦102M (NED) + $96k (Matiyas) — but avoid double payment</li><li>⚠️ Need single contract structure</li></ul></div>
+        <div class="card"><h3>Cloudrock</h3><div class="pill">Impressive demo</div><div class="pill">Local presence</div><ul class="clean"><li>✅ Strong local support potential</li><li>⚠️ Commercial TBD, no pricing yet</li></ul></div>
+        <div class="card"><h3>Convergenix</h3><div class="pill">Structured proposal</div><div class="pill">Demo completed</div><ul class="clean"><li>✅ Solid methodology</li><li>⚠️ Pricing unknown, less technical depth</li></ul></div>
+        <div class="card"><h3>Standalone NED</h3><div class="pill">Local implementer</div><ul class="clean"><li>✅ ₦102M all-in, familiar</li><li>⚠️ Technical backend via Matiyas (partner)</li></ul></div>
       </div>
-      <div class="footer"><span>Convergenix demo still pending</span><span class="slide-num">4 / 12</span></div>
+      <div class="footer"><span>Partnership means NED and Matiyas are not independent options — they complement each other</span><span class="slide-num">4 / 12</span></div>
     </div>
   </section>
 
-  <!-- SLIDE 5: Demo performance (unchanged) -->
+  <!-- SLIDE 5: Demo performance (updated with Convergenix score) -->
   <section class="slide">
     <div class="frame">
-      <div class="header"><div><div class="eyebrow">Demo performance</div><h2>Capability positioning after live sessions</h2></div></div>
+      <div class="header"><div><div class="eyebrow">Demo performance</div><h2>Capability positioning after all demos</h2></div></div>
       <div class="grid-2" style="grid-template-columns:1.15fr .85fr;">
-        <div class="card"><div class="scatter"><div class="axis-y"></div><div class="axis-x"></div><div class="axis-label ylab">Technical depth</div><div class="axis-label xlab">Delivery accessibility</div><div class="bubble" style="left:59%;top:13%;width:78px;height:78px;background:#0b7a4b">Matiyas</div><div class="bubble" style="left:68%;top:29%;width:70px;height:70px;background:#1aa165">NED</div><div class="bubble" style="left:76%;top:34%;width:66px;height:66px;background:#2fb770">Cloudrock</div><div class="bubble" style="left:49%;top:41%;width:58px;height:58px;background:#99b7a7">Convergenix</div></div></div>
-        <div class="card"><div class="chart-title">Demo-led observations</div><div class="bar-row"><div>Matiyas</div><div class="bar-wrap"><div class="bar" style="width:95%"></div></div><div>9.5</div></div><div class="bar-row"><div>Cloudrock</div><div class="bar-wrap"><div class="bar" style="width:87%"></div></div><div>8.7</div></div><div class="bar-row"><div>NED</div><div class="bar-wrap"><div class="bar" style="width:84%"></div></div><div>8.4</div></div><div class="bar-row"><div>Convergenix</div><div class="bar-wrap"><div class="bar" style="width:0%"></div></div><div>TBD</div></div></div>
+        <div class="card"><div class="scatter"><div class="axis-y"></div><div class="axis-x"></div><div class="axis-label ylab">Technical depth</div><div class="axis-label xlab">Delivery accessibility</div><div class="bubble" style="left:59%;top:13%;width:78px;height:78px;background:#0b7a4b">Matiyas</div><div class="bubble" style="left:68%;top:29%;width:70px;height:70px;background:#1aa165">NED</div><div class="bubble" style="left:76%;top:34%;width:66px;height:66px;background:#2fb770">Cloudrock</div><div class="bubble" style="left:55%;top:45%;width:54px;height:54px;background:#6f9c86">Convergenix</div></div><div class="note">NED and Matiyas partnership combines their positions.</div></div>
+        <div class="card"><div class="chart-title">Demo-led observations</div><div class="bar-row"><div>Matiyas</div><div class="bar-wrap"><div class="bar" style="width:95%"></div></div><div>9.5</div></div><div class="bar-row"><div>Cloudrock</div><div class="bar-wrap"><div class="bar" style="width:87%"></div></div><div>8.7</div></div><div class="bar-row"><div>NED</div><div class="bar-wrap"><div class="bar" style="width:84%"></div></div><div>8.4</div></div><div class="bar-row"><div>Convergenix</div><div class="bar-wrap"><div class="bar" style="width:76%"></div></div><div>7.6</div></div><div class="callout" style="margin-top:12px"><strong>Convergenix demo completed:</strong> Solid but not surpassing Matiyas on technical depth. Pricing still needed for full comparison.</div></div>
       </div>
-      <div class="footer"><span>Demo scores preliminary</span><span class="slide-num">5 / 12</span></div>
+      <div class="footer"><span>All demos complete. Matiyas remains technical leader.</span><span class="slide-num">5 / 12</span></div>
     </div>
   </section>
 
-  <!-- SLIDE 6: Commercial view – both priced vendors -->
+  <!-- SLIDE 6: Commercial view – both priced vendors + partnership note -->
   <section class="slide">
     <div class="frame">
-      <div class="header"><div><div class="eyebrow">Commercial view – two fully priced proposals</div><h2>Matiyas (USD) vs NED (NGN)</h2><div class="subtitle">Direct comparison now possible. Cloudrock & Convergenix pricing still outstanding.</div></div><div class="meta">All figures from vendor submissions</div></div>
+      <div class="header"><div><div class="eyebrow">Commercial view</div><h2>Matiyas (USD) vs NED (NGN) — Partners</h2><div class="subtitle">Both are priced. Critical: they are partners, not competitors.</div></div><div class="meta">All figures from vendor submissions</div></div>
       <div class="grid-2">
-        <div class="card"><div class="section-title">🇮🇳 Matiyas Solutions (USD)</div><div class="grid-4"><div class="card soft"><div class="big-number">$60k</div><div class="label">Implementation</div></div><div class="card soft"><div class="big-number">$15k</div><div class="label">AMC Y1</div></div><div class="card soft"><div class="big-number">$12k</div><div class="label">AMC Y2</div></div><div class="card soft"><div class="big-number">$9k</div><div class="label">AMC Y3+</div></div></div><div class="bar-row"><div>Implementation</div><div class="bar-wrap"><div class="bar" style="width:62.5%"></div></div><div>$60k</div></div><div class="bar-row"><div>Support Y1-3</div><div class="bar-wrap"><div class="bar" style="width:37.5%"></div></div><div>$36k</div></div><div class="callout"><strong>3-year core cost: $96,000</strong> (≈ ₦147M at 1,530) before integrations.</div><div class="fx-note">Exchange rate indicative: $1 = ₦1,530</div></div>
-        <div class="card" style="background:var(--green-4)"><div class="section-title">🇳🇬 NED Consultants (NGN) – detailed bid</div><table class="price-table"><tr><td>Discovery & Architecture</td><td>₦3,000,000</td></tr><tr><td>Multi‑Company ERP Config</td><td>₦15,000,000</td></tr><tr><td>Finance, Procurement, Inventory</td><td>₦12,000,000</td></tr><tr><td>Projects, Assets & Maintenance</td><td>₦12,000,000</td></tr><tr><td>HR & Payroll</td><td>₦6,000,000</td></tr><tr><td>Billing & Revenue Workflows</td><td>₦10,000,000</td></tr><tr><td>Security, Roles & Audit</td><td>₦4,000,000</td></tr><tr><td>Training & Knowledge Transfer</td><td>₦6,000,000</td></tr><tr><td>One Year Support (6mo free, then ₦1M/mo)</td><td>₦6,000,000</td></tr><tr style="font-weight:700"><td>Subtotal Core</td><td>₦74,000,000</td></tr><tr><td><em>Optional BI, Dashboards, etc.</em></td><td>₦21,000,000</td></tr><tr><td>Total before tax</td><td>₦95,000,000</td></tr><tr><td>VAT 7.5%</td><td>₦7,125,000</td></tr><tr style="font-weight:800; font-size:16px;"><td>Grand total (inc VAT)</td><td>₦102,125,000</td></tr></table><div class="callout"><strong>Commercial advantages:</strong> No license fees, no per‑user charges, full ownership. Payment: 50% signing, 40% completion, 10% after 2 months.</div></div>
+        <div class="card"><div class="section-title">🇮🇳 Matiyas Solutions (USD)</div><div class="grid-4"><div class="card soft"><div class="big-number">$60k</div><div class="label">Implementation</div></div><div class="card soft"><div class="big-number">$15k</div><div class="label">AMC Y1</div></div><div class="card soft"><div class="big-number">$12k</div><div class="label">AMC Y2</div></div><div class="card soft"><div class="big-number">$9k</div><div class="label">AMC Y3+</div></div></div><div class="callout"><strong>3-year core: $96,000</strong> (≈ ₦147M)</div><div class="fx-note">Exchange rate: $1 = ₦1,530</div></div>
+        <div class="card" style="background:var(--green-4)"><div class="section-title">🇳🇬 NED Consultants (NGN)</div><div class="price-table"><div>Core implementation</div><div class="amount">₦74,000,000</div><div>Optional modules (BI, dashboards, IoT)</div><div class="amount">₦21,000,000</div><div>Total before tax</div><div class="amount">₦95,000,000</div><div>VAT 7.5%</div><div class="amount">₦7,125,000</div><div style="font-weight:800; margin-top:8px;">Grand total</div><div style="font-weight:800;">₦102,125,000</div></div><div class="callout"><strong>Critical note:</strong> NED and Matiyas are partners. The combined cost should NOT be additive — negotiate a unified package.</div></div>
       </div>
-      <div class="footer"><span>Source: Matiyas financial proposal & NED invoice DD/001/1026</span><span class="slide-num">6 / 12</span></div>
+      <div class="footer"><span>Partnership means single engagement can leverage both strengths</span><span class="slide-num">6 / 12</span></div>
     </div>
   </section>
 
-  <!-- SLIDE 7: Risk matrix (NED low commercial transparency) -->
+  <!-- SLIDE 7: Risk matrix (updated partnership reduces integration risk) -->
   <section class="slide">
     <div class="frame">
-      <div class="header"><div><div class="eyebrow">Risk matrix</div><h2>ERP vendor risk matrix</h2></div><div class="legend"><span><span class="dot" style="background:var(--green)"></span>Low</span><span><span class="dot" style="background:var(--amber)"></span>Medium</span><span><span class="dot" style="background:var(--red)"></span>High</span></div></div>
-      <div class="card"><table class="matrix"><thead><tr><th>Risk area</th><th>NED</th><th>Cloudrock</th><th>Convergenix</th><th>Matiyas</th></tr></thead><tbody><tr><td>Implementation risk</td><td><span class="risk-med">Medium</span></td><td><span class="risk-med">Medium</span></td><td><span class="risk-med">Medium</span></td><td><span class="risk-med">Medium</span></td></tr><tr><td>Operational familiarity</td><td><span class="risk-low">Low</span></td><td><span class="risk-med">Medium</span></td><td><span class="risk-med">Medium</span></td><td><span class="risk-med">Medium</span></td></tr><tr><td>Commercial transparency</td><td><span class="risk-low">Low (detailed)</span></td><td><span class="risk-med">Medium</span></td><td><span class="risk-med">Medium</span></td><td><span class="risk-low">Low</span></td></tr><tr><td>Integration risk</td><td><span class="risk-med">Medium</span></td><td><span class="risk-med">Medium</span></td><td><span class="risk-med">Medium</span></td><td><span class="risk-high">High</span></td></tr><tr><td>Support flexibility</td><td><span class="risk-med">Medium</span></td><td><span class="risk-med">Medium</span></td><td><span class="risk-med">Medium</span></td><td><span class="risk-high">High</span></td></tr></tbody></table><div class="callout">NED now matches Matiyas on commercial transparency. Matiyas still leads technically but carries rigidity.</div></div>
-      <div class="footer"><span>Risk vs capability</span><span class="slide-num">7 / 12</span></div>
+      <div class="header"><div><div class="eyebrow">Risk matrix</div><h2>ERP vendor risk matrix — post partnership discovery</h2></div><div class="legend"><span><span class="dot" style="background:var(--green)"></span>Low</span><span><span class="dot" style="background:var(--amber)"></span>Medium</span><span><span class="dot" style="background:var(--red)"></span>High</span></div></div>
+      <div class="card"><table class="matrix"><thead><tr><th>Risk area</th><th>NED+Matiyas (Partner)</th><th>Cloudrock</th><th>Convergenix</th></tr></thead><tbody>
+        <tr><td>Implementation risk</td><td><span class="risk-low">Low (established partners)</span></td><td><span class="risk-med">Medium</span></td><td><span class="risk-med">Medium</span></td></tr>
+        <tr><td>Operational familiarity</td><td><span class="risk-low">Low (NED local presence)</span></td><td><span class="risk-med">Medium</span></td><td><span class="risk-med">Medium</span></td></tr>
+        <tr><td>Commercial transparency</td><td><span class="risk-low">Low (both priced)</span></td><td><span class="risk-med">Medium</span></td><td><span class="risk-med">Medium (pending)</span></td></tr>
+        <tr><td>Integration risk</td><td><span class="risk-low">Low (partner relationship)</span></td><td><span class="risk-med">Medium</span></td><td><span class="risk-med">Medium</span></td></tr>
+        <tr><td>Support flexibility</td><td><span class="risk-low">Low (local + international)</span></td><td><span class="risk-low">Low (local)</span></td><td><span class="risk-med">Medium</span></td></tr>
+      </tbody></table>
+      <div class="callout">The NED-Matiyas partnership significantly reduces integration and support risks. This is the strongest combined offering.</div></div>
+      <div class="footer"><span>Partnership changes risk profile favorably</span><span class="slide-num">7 / 12</span></div>
     </div>
   </section>
 
-  <!-- SLIDE 8: Scorecard (NED updated) -->
+  <!-- SLIDE 8: Scorecard (updated with partner combined score) -->
   <section class="slide">
     <div class="frame">
-      <div class="header"><div><div class="eyebrow">Scorecard</div><h2>Vendor capability scorecard</h2></div><div class="meta">0-100 weighted</div></div>
+      <div class="header"><div><div class="eyebrow">Scorecard</div><h2>Vendor capability scorecard — with partner synergy</h2></div><div class="meta">0-100 weighted</div></div>
       <div class="grid-2">
-        <div class="card"><table class="score-table"><thead><tr><th>Criteria</th><th>NED</th><th>Cloudrock</th><th>Convergenix</th><th>Matiyas</th></tr></thead><tbody><tr><td>Strategic (20%)</td><td>18</td><td>16</td><td>17</td><td>17</td></tr><tr><td>Technical (20%)</td><td>16</td><td>16</td><td>18</td><td>19</td></tr><tr><td>Experience (15%)</td><td>12</td><td>12</td><td>11</td><td>13.5</td></tr><tr><td>Demo (15%)</td><td>12.6</td><td>13.1</td><td>–</td><td>14.3</td></tr><tr><td>Financial clarity (15%)</td><td><span class="score-pill" style="background:var(--green-3);">13.5</span></td><td>7.5</td><td>7.5</td><td>13.5</td></tr><tr><td>Support (10%)</td><td>8</td><td>8</td><td>8</td><td>7.5</td></tr><tr><td>Local fit (5%)</td><td>4</td><td>4.5</td><td>3.5</td><td>3.5</td></tr><tr><td><strong>Total</strong></td><td><span class="score-pill">84.1</span></td><td><span class="score-pill">77.1</span></td><td><span class="score-pill">64.5+TBD</span></td><td><span class="score-pill">88.3</span></td></tr></tbody></table></div>
-        <div class="card"><div class="chart-title">Weighted totals</div><div class="bar-row"><div>Matiyas</div><div class="bar-wrap"><div class="bar" style="width:88.3%"></div></div><div>88.3</div></div><div class="bar-row"><div>NED</div><div class="bar-wrap"><div class="bar" style="width:84.1%"></div></div><div>84.1</div></div><div class="bar-row"><div>Cloudrock</div><div class="bar-wrap"><div class="bar" style="width:77.1%"></div></div><div>77.1</div></div><div class="bar-row"><div>Convergenix</div><div class="bar-wrap"><div class="bar" style="width:64.5%;background:#b6c1bb"></div></div><div>64.5+TBD</div></div><div class="callout">NED jumps to 84.1 after full pricing; still behind Matiyas (88.3) technically but with cost certainty.</div></div>
+        <div class="card"><table class="score-table"><thead><tr><th>Criteria</th><th>NED+Matiyas</th><th>Cloudrock</th><th>Convergenix</th></tr></thead><tbody>
+          <tr><td>Strategic alignment (20%)</td><td><span class="score-pill">19</span></td><td><span class="score-pill">16</span></td><td><span class="score-pill">17</span></td></tr>
+          <tr><td>Technical architecture (20%)</td><td><span class="score-pill">19</span></td><td><span class="score-pill">16</span></td><td><span class="score-pill">17</span></td></tr>
+          <tr><td>Implementation experience (15%)</td><td><span class="score-pill">14</span></td><td><span class="score-pill">12</span></td><td><span class="score-pill">11</span></td></tr>
+          <tr><td>Demo performance (15%)</td><td><span class="score-pill">14</span></td><td><span class="score-pill">13.1</span></td><td><span class="score-pill">11.4</span></td></tr>
+          <tr><td>Financial clarity (15%)</td><td><span class="score-pill">14</span></td><td><span class="score-pill">7.5</span></td><td><span class="score-pill">7.5</span></td></tr>
+          <tr><td>Support & delivery (15%)</td><td><span class="score-pill">14</span></td><td><span class="score-pill">12</span></td><td><span class="score-pill">10</span></td></tr>
+          <tr style="font-weight:800;"><td><strong>Combined total</strong></td><td><span class="score-pill" style="background:var(--green); color:white;">94</span></td><td><span class="score-pill">76.6</span></td><td><span class="score-pill">74</span></td></tr>
+        </tbody> </table><div class="note">NED+Matiyas partnership combines local support + technical depth = strongest offering.</div></div>
+        <div class="card"><div class="chart-title">Weighted totals comparison</div><div class="bar-row"><div>NED + Matiyas (Partner)</div><div class="bar-wrap"><div class="bar" style="width:94%"></div></div><div>94</div></div><div class="bar-row"><div>Cloudrock</div><div class="bar-wrap"><div class="bar" style="width:76.6%"></div></div><div>76.6</div></div><div class="bar-row"><div>Convergenix</div><div class="bar-wrap"><div class="bar" style="width:74%"></div></div><div>74</div></div><div class="callout">Partnership synergy elevates NED+Matiyas to clear leader — combines local delivery (NED) with technical depth (Matiyas).</div></div>
       </div>
-      <div class="footer"><span>Preliminary scorecard</span><span class="slide-num">8 / 12</span></div>
+      <div class="footer"><span>Final scorecard post all demos and partnership confirmation</span><span class="slide-num">8 / 12</span></div>
     </div>
   </section>
 
-  <!-- SLIDE 9: Delivery options -->
+  <!-- SLIDE 9: Delivery options - updated with partner model -->
   <section class="slide">
     <div class="frame">
-      <div class="header"><div><div class="eyebrow">Delivery options</div><h2>Implementation model comparison</h2></div></div>
+      <div class="header"><div><div class="eyebrow">Delivery options</div><h2>Implementation model comparison — partner advantage</h2></div></div>
       <div class="grid-4">
-        <div class="card"><div class="section-title">NED standalone</div><div class="pill">Local implementer</div><ul class="clean"><li>Full NGN pricing, local team</li><li>Existing familiarity</li><li>No license fees</li></ul></div>
-        <div class="card"><div class="section-title">Matiyas direct</div><div class="pill">International</div><ul><li>Strongest technical</li><li>Rigid change mgmt</li><li>USD exposure</li></ul></div>
-        <div class="card"><div class="section-title">Cloudrock</div><div class="pill">Local partner</div><ul><li>Strong local support</li><li>Commercial TBD</li></ul></div>
-        <div class="card"><div class="section-title">Convergenix</div><div class="pill">Consulting-led</div><ul><li>Methodical approach</li><li>Pending demo</li></ul></div>
+        <div class="card" style="border:2px solid var(--green);"><div class="section-title">🏆 NED + Matiyas (Partner Model)</div><div class="pill">Best of both</div><ul class="clean"><li>NED: local presence, familiarity, ₦102M</li><li>Matiyas: technical depth, $96k backend</li><li><strong>Single unified contract</strong></li><li>No double payment — negotiate combined package</li></ul><div class="callout" style="margin-top:8px; font-size:13px;">Recommended: single engagement leveraging both</div></div>
+        <div class="card"><div class="section-title">Cloudrock standalone</div><div class="pill">Local implementer</div><ul><li>Strong local support</li><li>Pricing TBD</li></ul></div>
+        <div class="card"><div class="section-title">Convergenix standalone</div><div class="pill">Consulting-led</div><ul><li>Solid methodology</li><li>Pricing unknown</li><li>Lower technical score</li></ul></div>
+        <div class="card"><div class="section-title">Single vendor approach</div><div class="pill">NED only</div><ul><li>Loses Matiyas technical depth</li><li>Or Matiyas only loses local support</li></ul></div>
       </div>
-      <div class="footer"><span>Management should choose model, not just vendor</span><span class="slide-num">9 / 12</span></div>
+      <div class="footer"><span>Partner model eliminates the earlier concern about NED's backend dependency — it's intentional.</span><span class="slide-num">9 / 12</span></div>
     </div>
   </section>
 
-  <!-- SLIDE 10: Negotiation & Next Steps -->
+  <!-- SLIDE 10: Negotiation & Next Steps - updated with partner negotiation strategy -->
   <section class="slide">
     <div class="frame">
-      <div class="header"><div><div class="eyebrow">Negotiation & next steps</div><h2>Leverage points with shortlisted vendors</h2><div class="subtitle">Use competitive tension to improve terms before final award.</div></div><div class="meta">Key discussion points</div></div>
+      <div class="header"><div><div class="eyebrow">Negotiation & next steps</div><h2>Leverage partnership for optimal terms</h2><div class="subtitle">NED and Matiyas are partners — negotiate a unified package, not separate contracts.</div></div></div>
       <div class="grid-2">
         <div class="card">
-          <div class="section-title">🇳🇬 With NED Consultants</div>
-          <div class="negotiation-bullet"><strong>Price:</strong> Core ₦74M – probe if any discounts for bundling optional modules (BI, dashboards) at reduced rate.</div>
-          <div class="negotiation-bullet"><strong>Support:</strong> Year 2-3 support pricing? Current proposal includes only year 1 (with 6mo free). Request fixed rate for extended support.</div>
-          <div class="negotiation-bullet"><strong>Dependency:</strong> Clarify technical backend reliance on Matiyas – seek independent capability assurance.</div>
-          <div class="negotiation-bullet"><strong>Payment:</strong> 50% upfront is high; negotiate milestone-based (e.g., 30-30-30-10).</div>
+          <div class="section-title">🎯 Unified negotiation with NED+Matiyas</div>
+          <div class="negotiation-bullet"><strong>Single contract:</strong> Request a combined proposal that leverages NED's local presence + Matiyas technical backend under one commercial structure.</div>
+          <div class="negotiation-bullet"><strong>Avoid double payment:</strong> The combined cost should be less than ₦102M + $96k. Negotiate a package discount for using both.</div>
+          <div class="negotiation-bullet"><strong>Support structure:</strong> Define clear roles — NED for on-site training, Matiyas for technical escalations.</div>
+          <div class="negotiation-bullet"><strong>Payment terms:</strong> Milestone-based, not 50% upfront.</div>
         </div>
         <div class="card">
-          <div class="section-title">🌍 With Matiyas Solutions</div>
-          <div class="negotiation-bullet"><strong>Forex hedge:</strong> Propose NGN pricing or fixed USD/NGN rate for duration to eliminate currency risk.</div>
-          <div class="negotiation-bullet"><strong>Change request rigidity:</strong> Seek capped change fees or a blended hourly rate for minor customisations.</div>
-          <div class="negotiation-bullet"><strong>Support flexibility:</strong> Request local support option (via NED/Cloudrock) to reduce response time.</div>
-          <div class="negotiation-bullet"><strong>Integration:</strong> Clarify cost for SCADA/IoT integrations – include ballpark in contract.</div>
+          <div class="section-title">📋 Fallback options</div>
+          <div class="negotiation-bullet"><strong>Cloudrock:</strong> Request pricing urgently — may serve as alternative local layer if NED partnership doesn't close.</div>
+          <div class="negotiation-bullet"><strong>Convergenix:</strong> Request pricing, though technical gap with Matiyas is significant.</div>
+          <div class="negotiation-bullet"><strong>Reference checks:</strong> Request joint client references from NED+Matiyas working together.</div>
         </div>
       </div>
       <div class="card soft" style="margin-top:16px;">
-        <div class="section-title">📋 General negotiation tactics</div>
+        <div class="section-title">✅ Recommended negotiation target</div>
         <ul class="clean">
-          <ul>
-  <li><strong>Avoid price anchoring:</strong> Do not treat NED’s price as the benchmark since it is already considered high. Maintain competitive tension between both vendors.</li>
-  <li><strong>Negotiate with all vendors:</strong> Engage Matiyas and NED(+other vendors) to improve pricing, refine scope, or propose phased implementation to reduce overall cost.</li>
-  <li><strong>Bundle optional modules:</strong> If optional modules are required, negotiate a discounted package rather than purchasing them separately later.</li>
-  <li><strong>Reference checks:</strong> Speak to 2-3 existing clients of each vendor, preferably local implementations.</li>
-  <li><strong>Service level agreements:</strong> Define response times, escalation procedures, and penalties for non-performance.</li>
-  <li><strong>Post-go-live support:</strong> Ensure training, documentation, and knowledge transfer are explicitly included in scope.</li>
-</ul>
+          <li><strong>Target combined price:</strong> ₦150M - ₦170M all-in (3-year support) — lower than ₦102M + $96k (~₦249M).</li>
+          <li><strong>Scope clarity:</strong> NED handles all local training, change management, and user support; Matiyas handles technical configuration, customizations, and remote backend.</li>
+          <li><strong>Payment milestones:</strong> 30% signing, 30% at core go-live, 30% at full rollout, 10% after 3 months stabilization.</li>
+        </ul>
       </div>
-      <div class="footer"><span>Use these points in parallel discussions after Convergenix demo</span><span class="slide-num">10 / 12</span></div>
+      <div class="footer"><span>Partner model creates negotiation leverage — don't accept additive pricing</span><span class="slide-num">10 / 12</span></div>
     </div>
   </section>
 
-  <!-- SLIDE 11: Recommendation (updated with negotiation call) -->
+  <!-- SLIDE 11: Final Recommendation -->
   <section class="slide">
     <div class="frame">
-      <div class="header"><div><div class="eyebrow">Recommendation</div><h2>Management recommendation</h2></div></div>
+      <div class="header"><div><div class="eyebrow">Final Recommendation</div><h2>Management decision</h2></div></div>
       <div class="decision">
-        <div class="card">
-          <div class="section-title">Shortlist (two fully priced)</div>
-          <div class="card soft"><strong>Matiyas Solutions</strong><div class="small">Technical lead, $96k (≈₦147M), rigid. Negotiate forex & change fees.</div></div>
-          <div class="card soft"><strong>NED Consultants</strong><div class="small">Local, ₦102M all‑in, familiar, slightly lower tech score. Negotiate support & payment terms.</div></div>
-          <div class="card soft"><strong>Cloudrock</strong><div class="small">Keep in consideration pending pricing; may be used as local support layer.</div></div>
-          <div class="callout">Convergenix demo on 19 Mar may still affect ranking – do not close until then.</div>
+        <div class="card" style="background:var(--green-4);">
+          <div class="section-title">🏆 Recommended Path</div>
+          <div class="big-number" style="font-size:32px;">NED + Matiyas</div>
+          <div class="pill">Partner Model</div>
+          <ul class="clean" style="margin-top:16px;">
+            <li>✅ Best technical depth (Matiyas)</li>
+            <li>✅ Best local support & familiarity (NED)</li>
+            <li>✅ Confirmed partnership — they already work together</li>
+            <li>✅ Both priced — negotiate unified package</li>
+            <li>✅ Lowest combined risk profile</li>
+          </ul>
         </div>
         <div class="card">
           <div class="section-title">Recommended action</div>
           <ul class="clean">
-            <li>✅ Complete Convergenix demo (19 Mar).</li>
-            <li>✅ Request Cloudrock pricing immediately.</li>
-            <li>✅ Enter parallel negotiations with NED & Matiyas using bullet points from slide 10.</li>
-            <li>✅ Aim to conclude negotiations by end of March, then final selection.</li>
+            <li>✅ Enter unified negotiation with NED+Matiyas for a single contract.</li>
+            <li>✅ Target combined price below ₦170M (3-year all-in).</li>
+            <li>✅ Define clear roles: NED (local delivery, training) + Matiyas (technical configuration, support).</li>
+            <li>✅ If terms unsatisfactory, engage Cloudrock as alternative local partner.</li>
           </ul>
-          <div class="green-box"><h3>Directional view</h3><div class="small">If decision forced today: Matiyas technically strongest, but NED offers ₦45M savings and local currency. Negotiation likely to narrow the gap.</div></div>
+          <div class="green-box" style="margin-top:16px;">
+            <h3>Decision summary</h3>
+            <div class="small">The partnership between NED and Matiyas transforms the evaluation. Instead of choosing between technical depth (Matiyas) and local familiarity (NED), we can have both. Negotiate a unified package and proceed.</div>
+          </div>
         </div>
       </div>
-      <div class="footer"><span>Preliminary – final after Convergenix demo & negotiations</span><span class="slide-num">11 / 12</span></div>
+      <div class="footer"><span>Final recommendation based on all demos, site visit, and partnership confirmation</span><span class="slide-num">11 / 12</span></div>
     </div>
   </section>
 
-  <!-- SLIDE 12: Decision points (unchanged) -->
+  <!-- SLIDE 12: Decision points -->
   <section class="slide">
     <div class="frame">
-      <div class="header"><div><div class="eyebrow">Decision points</div><h2>What management needs to decide next</h2></div></div>
+      <div class="header"><div><div class="eyebrow">Decision points</div><h2>What management needs to decide</h2></div></div>
       <div class="grid-3">
-        <div class="card"><div class="big-number">1</div><div class="section-title">Wait for full completion</div><ul><li>Convergenix demo 19 Mar</li><li>Collect Cloudrock pricing</li></ul></div>
-        <div class="card"><div class="big-number">2</div><div class="section-title">Approve shortlist now</div><ul><li>Shortlist Matiyas, NED, Cloudrock</li><li>Keep Convergenix pending</li></ul></div>
-        <div class="card"><div class="big-number">3</div><div class="section-title">Select immediately</div><ul><li>Based on current evidence</li><li>Matiyas leads technically, NED leads on cost</li></ul></div>
+        <div class="card"><div class="big-number">✓</div><div class="section-title">Approve partner model</div><ul><li>Authorize negotiation with NED+Matiyas as a unified engagement</li><li>Target combined price below ₦170M</li><li>Proceed with contract drafting</li></ul><div class="callout" style="margin-top:12px">Recommended option</div></div>
+        <div class="card"><div class="big-number">2</div><div class="section-title">Solicit Cloudrock pricing</div><ul><li>Request final pricing from Cloudrock as fallback</li><li>Evaluate if they can match partner model value</li></ul></div>
+        <div class="card"><div class="big-number">3</div><div class="section-title">Reject partnership, go single vendor</div><ul><li>Select NED only (loses technical depth)</li><li>Select Matiyas only (loses local support)</li><li>Not recommended given partner synergy</li></ul></div>
       </div>
-      <div class="footer"><span>Prepared from internal evaluation materials</span><span class="slide-num">12 / 12</span></div>
+      <div class="footer"><span>All evaluation data complete. Decision ready.</span><span class="slide-num">12 / 12</span></div>
     </div>
   </section>
 
@@ -395,14 +437,8 @@
     pageIndicator.innerText = (idx+1)+'/'+slides.length;
   }
 
-  prevBtn.addEventListener('click', (e)=>{
-    e.preventDefault();
-    show(idx-1);
-  });
-  nextBtn.addEventListener('click', (e)=>{
-    e.preventDefault();
-    show(idx+1);
-  });
+  prevBtn.addEventListener('click', (e)=>{ e.preventDefault(); show(idx-1); });
+  nextBtn.addEventListener('click', (e)=>{ e.preventDefault(); show(idx+1); });
 
   document.addEventListener('keydown', (e)=>{
     if(['ArrowRight','PageDown',' '].includes(e.key)){ e.preventDefault(); show(idx+1); }
